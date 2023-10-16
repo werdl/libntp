@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "libntp"
+version = "0.1.1"
+description = "A Python package for interfacing with the Network Time Protocol"
+authors = ["werdl <werdl_is_cool@outlook.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+repository="http://github.com/werdl/libntp"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
