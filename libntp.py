@@ -146,4 +146,3 @@ class ntp:
         self=ntp()
         self.request()
         return self.iso8601r(float(ntp.__tzstr()))
-print(ntp.local_iso8601())

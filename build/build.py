@@ -16,8 +16,11 @@ def build():
     if os.path.isfile("pyproject.toml") :
         with open("pyproject.toml", "rb") as toml:
             values=tomli.load(toml)
-            
+            new_version=input(f"Current version is {find_version(dict(values))}. Please enter the new version! ")
+        if os.path.isfile("~/.pypirc"):
+            pass
+        else:
+            print("Couldn't find credentials...")
 
-            x=input(f"Current version is {find_version(dict(values))}. Please enter the new version! ")
 if __name__=="__main__":
     build()
