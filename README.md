@@ -3,6 +3,7 @@
 - An alternative to ntplib
 - Easy API
 - Simple include
+- No external dependencies 
 ### An example
 ```py
 import libntp
