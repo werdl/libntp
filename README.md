@@ -6,10 +6,10 @@
 - No external dependencies 
 ### An example
 ```py
-import libntp
-myobj=libntp.ntp()
+from libntp import ntp
+myobj=ntp()
 myobj.request()
 print(myobj.iso8601)
 
-print(libntp.ntp.local_utc())
+print(ntp.local_utc())
 ```
