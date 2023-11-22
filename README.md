@@ -9,7 +9,7 @@
 from libntp import ntp
 myobj=ntp()
 myobj.request()
-print(myobj.iso8601)
+print(myobj.iso8601())
 
 print(ntp.local_utc())
 ```
